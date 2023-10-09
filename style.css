@@ -1,0 +1,66 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 800px; /* Cambia el valor máximo según tus necesidades */
+  margin: 0 auto;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 150px; /* Agrega sombra */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Agrega borde */
+  border-radius: 8px; /* Agrega esquinas redondeadas */
+}
+.title {
+  color: #e72e2e;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+img {
+  width: 64px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 64px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+/* Estilos base del botón */
+/* Estilos base del botón */
+/* Estilos para el enlace (a) */
+ .boton {
+  background-color: #e72e2e;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Elimina la subrayado del enlace */
+  width: 38px; /* Establece el ancho deseado */
+  height: 20px; /* Establece el alto deseado */
+  /* Centrar horizontalmente */
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .boton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+@media (max-width: 768px) { /* Ajusta el valor de acuerdo a tu diseño responsive */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
